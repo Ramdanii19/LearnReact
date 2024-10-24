@@ -1,7 +1,19 @@
+const Button = (bebas) => {
+  const { children = "Kosong", variant = "bg-white" } = bebas;
+  return (
+    <button className={`h-10 px-6 font-semibold rounded-md ${variant} to-white`} type="submit">${children}</button>
+  );
+};
+
 function App() {
   return (
-    <div className="flex justify-center bg-violet-500">
-      <div className="text-2xl">Hallo</div>
+    <div className="flex justify-center bg-blue-600 items-center">
+      <div className="flex gap-x-3">
+        <Button variant="bg-red-700">Buy</Button>
+        <Button variant="bg-slate-500">Now</Button>
+        <Button variant="bg-green-700">Sale</Button>
+        <Button></Button>
+      </div>
     </div>
   )
 }
