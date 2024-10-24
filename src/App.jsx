@@ -1,14 +1,11 @@
-import Button from "./components/Elements/Button"
+import LoginPage from "./Pages/login"
+import RegisterPage from "./Pages/register"
 
 function App() {
   return (
-    <div className="flex justify-center bg-blue-600 items-center">
-      <div className="flex gap-x-3">
-        <Button variant="bg-red-700">Buy</Button>
-        <Button variant="bg-slate-500">Now</Button>
-        <Button variant="bg-green-700">Sale</Button>
-        <Button></Button>
-      </div>
+    <div className="flex justify-center min-h-screen items-center">
+      {/* <LoginPage></LoginPage> */}
+      <RegisterPage></RegisterPage>
     </div>
   )
 }
