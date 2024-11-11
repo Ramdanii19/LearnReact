@@ -1,9 +1,11 @@
+import { useTranslation } from "react-i18next";
 import FormRegister from "../components/Fragments/FormRegister";
 import AuthLayout from "../components/Layouts/AuthLayout";
 
 const RegisterPage = () => {
+  const { t } = useTranslation();
   return (
-    <AuthLayout title="Login" type="register">
+    <AuthLayout title={t('signup')} type="register">
       <FormRegister />
     </AuthLayout>
   );

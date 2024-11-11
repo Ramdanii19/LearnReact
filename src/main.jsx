@@ -12,6 +12,7 @@ import { Provider } from 'react-redux'
 import store from './redux/store.js'
 import DarkModeContextProvider from './context/DarkMode.jsx'
 import { TotalPriceProvider } from './context/TotalPriceContext.jsx'
+import './i18n.js'
 
 const router = createBrowserRouter([
   {
